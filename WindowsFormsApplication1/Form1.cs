@@ -16,5 +16,15 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void Window_Load(object sender, EventArgs e)
+        {
+            Graphics formGraphics = this.CreateGraphics();
+            SolidBrush drawBrush = new SolidBrush(Color.Black);
+            Pen drawPen = new Pen(Color.Red, 10);
+
+            formGraphics.FillEllipse(drawBrush, 25, 25, 100, 200);
+
+        }
     }
 }

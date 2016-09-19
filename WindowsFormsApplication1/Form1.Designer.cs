@@ -34,9 +34,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(379, 317);
             this.Name = "Window";
             this.Text = "Greeting Card";
+            this.Load += new System.EventHandler(this.Window_Load);
             this.ResumeLayout(false);
 
         }

@@ -38,7 +38,7 @@
             this.ClientSize = new System.Drawing.Size(379, 317);
             this.Name = "Window";
             this.Text = "Greeting Card";
-            this.Load += new System.EventHandler(this.Window_Load);
+            this.Click += new System.EventHandler(this.Window_Click);
             this.ResumeLayout(false);
 
         }

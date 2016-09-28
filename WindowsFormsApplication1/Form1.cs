@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 
+// header comment will go here
+
 namespace WindowsFormsApplication1
 {
     public partial class Window : Form

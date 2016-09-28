@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 
-// header comment will go here
+// Date: Sept 2016
 
 namespace WindowsFormsApplication1
 {

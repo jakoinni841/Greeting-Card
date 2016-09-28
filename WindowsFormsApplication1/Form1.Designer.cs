@@ -34,11 +34,11 @@
             // greeting
             // 
             this.greeting.AutoSize = true;
-            this.greeting.Font = new System.Drawing.Font("Lucida Sans Unicode", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greeting.Font = new System.Drawing.Font("Tekton Pro Ext", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.greeting.ForeColor = System.Drawing.Color.White;
-            this.greeting.Location = new System.Drawing.Point(102, 126);
+            this.greeting.Location = new System.Drawing.Point(115, 57);
             this.greeting.Name = "greeting";
-            this.greeting.Size = new System.Drawing.Size(170, 45);
+            this.greeting.Size = new System.Drawing.Size(155, 45);
             this.greeting.TabIndex = 0;
             this.greeting.Text = "Hello!!!!";
             // 
@@ -47,7 +47,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(379, 317);
+            this.ClientSize = new System.Drawing.Size(396, 317);
             this.Controls.Add(this.greeting);
             this.Name = "Window";
             this.Text = "Greeting Card";

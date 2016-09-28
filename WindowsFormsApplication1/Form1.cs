@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 
-// Date: Sept 2016
+// Jakob Innis, September 28, 2016. Constellation Program.
 
 namespace WindowsFormsApplication1
 {
@@ -25,7 +25,7 @@ namespace WindowsFormsApplication1
 
         private void Window_Click(object sender, EventArgs e)
         {
-            //Create Graphics, Pens, and Brushes
+            // Create Graphics, Pens, and Brushes for Constellation
             greeting.Visible = false;
             Graphics formGraphics = this.CreateGraphics();
             Graphics fg = this.CreateGraphics();
@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
             Pen drawWhite = new Pen(Color.White, 2);
             Pen drawYellow = new Pen(Color.Yellow, 2);
 
-            //Random Stars
+            / /Random Stars
             formGraphics.FillEllipse(drawStar, 16, 16, 5, 5);
             formGraphics.FillEllipse(drawStar, 32, 48, 5, 5);
             formGraphics.FillEllipse(drawStar, 48, 32, 5, 5);
@@ -53,8 +53,7 @@ namespace WindowsFormsApplication1
             formGraphics.FillEllipse(drawStar, 200, 125, 5, 5);
             formGraphics.FillEllipse(drawStar, 170, 15, 5, 5);
 
-
-            //Points go in order from left clockwise
+            // Points go in order from left clockwise
             formGraphics.FillEllipse(drawStar, 50, 60, 5, 5);
             formGraphics.FillEllipse(drawStar, 80, 65, 5, 5);
             formGraphics.FillEllipse(drawStar, 90, 50, 5, 5);
@@ -66,7 +65,7 @@ namespace WindowsFormsApplication1
             formGraphics.FillEllipse(drawStar, 95, 150, 5, 5);
             formGraphics.FillEllipse(drawStar, 205, 104, 5, 5);
 
-            //Form Lines connecting stars 
+            // Form Lines connecting stars 
             SoundPlayer player = new SoundPlayer(Properties.Resources.twinkle);
             player.Play();
             Thread.Sleep(500);
@@ -134,7 +133,7 @@ namespace WindowsFormsApplication1
             Thread.Sleep(500);
 
 
-            //Make the Ophiuchus definition
+            // Make the Ophiuchus definition
             formGraphics.DrawLine(drawWhite, 160, 25, 185, 70);
             Font drawFont = new Font("Times New Roman", 16, FontStyle.Bold);
             SolidBrush drawFact = new SolidBrush(Color.White);
@@ -146,7 +145,7 @@ namespace WindowsFormsApplication1
             fg.DrawString("thirteenth sign in addition to the", drawText, drawFact, 127, 220);
             fg.DrawString("twelve signs of the tropical Zodiac.", drawText, drawFact, 127, 230);
 
-            //Long Thing of changing colors
+            // Long Thing of changing colors
             Thread.Sleep(500);
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
@@ -158,6 +157,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -168,6 +168,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -189,6 +190,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -199,6 +201,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -220,6 +223,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -230,6 +234,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -251,6 +256,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -261,6 +267,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -282,6 +289,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -292,6 +300,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -313,6 +322,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -323,6 +333,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -344,6 +355,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -354,6 +366,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -375,6 +388,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -385,6 +399,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -406,6 +421,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -416,6 +432,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -437,6 +454,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -447,6 +465,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -468,6 +487,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -478,6 +498,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -499,6 +520,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -509,6 +531,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -530,6 +553,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -540,6 +564,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -561,6 +586,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -571,6 +597,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -592,6 +619,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -602,6 +630,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -623,6 +652,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -633,6 +663,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -654,6 +685,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawYellow, 197, 112, 185, 70);
             formGraphics.DrawLine(drawWhite, 195, 112, 206, 106);
             formGraphics.DrawLine(drawYellow, 157, 138, 195, 112);
@@ -664,6 +696,7 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 82, 67, 97, 152);
             formGraphics.DrawLine(drawYellow, 52, 62, 82, 67);
             Thread.Sleep(500);
+
             formGraphics.DrawLine(drawWhite, 197, 112, 185, 70);
             formGraphics.DrawLine(drawYellow, 195, 112, 206, 106);
             formGraphics.DrawLine(drawWhite, 157, 138, 195, 112);
@@ -674,7 +707,6 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawYellow, 82, 67, 97, 152);
             formGraphics.DrawLine(drawWhite, 52, 62, 82, 67);
             Thread.Sleep(500);
-
 
         }
     }

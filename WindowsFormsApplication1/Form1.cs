@@ -27,13 +27,17 @@ namespace WindowsFormsApplication1
         {
             // Create Graphics, Pens, and Brushes for Constellation
             greeting.Visible = false;
+            this.BackgroundImage = null;
+            design.Visible = false;
+            design2.Visible = false;
+            Refresh();
             Graphics formGraphics = this.CreateGraphics();
             Graphics fg = this.CreateGraphics();
             SolidBrush drawStar = new SolidBrush(Color.Yellow);
             Pen drawWhite = new Pen(Color.White, 2);
             Pen drawYellow = new Pen(Color.Yellow, 2);
 
-            / /Random Stars
+            //Random Stars
             formGraphics.FillEllipse(drawStar, 16, 16, 5, 5);
             formGraphics.FillEllipse(drawStar, 32, 48, 5, 5);
             formGraphics.FillEllipse(drawStar, 48, 32, 5, 5);
@@ -137,9 +141,10 @@ namespace WindowsFormsApplication1
             formGraphics.DrawLine(drawWhite, 160, 25, 185, 70);
             Font drawFont = new Font("Times New Roman", 16, FontStyle.Bold);
             SolidBrush drawFact = new SolidBrush(Color.White);
+            SolidBrush drawFact2 = new SolidBrush(Color.Blue);
             Font drawText = new Font("Arial", 8, FontStyle.Bold);
 
-            fg.DrawString("Ophiuchus Constellation", drawFont, drawFact, 120, 175);
+            fg.DrawString("Ophiuchus Constellation", drawFont, drawFact2, 120, 175);
             fg.DrawString("Ophiuchus has sometimes been used", drawText, drawFact, 127, 200);
             fg.DrawString("in sidereal astrology as a", drawText, drawFact, 127, 210);
             fg.DrawString("thirteenth sign in addition to the", drawText, drawFact, 127, 220);
